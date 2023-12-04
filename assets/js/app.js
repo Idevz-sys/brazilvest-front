@@ -341,65 +341,65 @@ $(window).on("load", function () {
         );
       });
 
-      var progressCircles2 = new ProgressBar.Circle(circleprogresstwo, {
-        color: "#3AC79B",
-        // This has to be the same size as the maximum width to
-        // prevent clipping
-        strokeWidth: 10,
-        trailWidth: 10,
-        easing: "easeInOut",
-        trailColor: "#d8f4eb",
-        duration: 1400,
-        text: {
-          autoStyleContainer: false,
-        },
-        from: { color: "#00DFA3", width: 10 },
-        to: { color: "#00DFA3", width: 10 },
-        // Set default step function for all animate calls
-        step: function (state, circle) {
-          circle.path.setAttribute("stroke", state.color);
-          circle.path.setAttribute("stroke-width", state.width);
+      // var progressCircles2 = new ProgressBar.Circle(circleprogresstwo, {
+      //   color: "#3AC79B",
+      //   // This has to be the same size as the maximum width to
+      //   // prevent clipping
+      //   strokeWidth: 10,
+      //   trailWidth: 10,
+      //   easing: "easeInOut",
+      //   trailColor: "#d8f4eb",
+      //   duration: 1400,
+      //   text: {
+      //     autoStyleContainer: false,
+      //   },
+      //   from: { color: "#00DFA3", width: 10 },
+      //   to: { color: "#00DFA3", width: 10 },
+      //   // Set default step function for all animate calls
+      //   step: function (state, circle) {
+      //     circle.path.setAttribute("stroke", state.color);
+      //     circle.path.setAttribute("stroke-width", state.width);
 
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            //  circle.setText('');
-          } else {
-            // circle.setText(value + "<small>%<small>");
-          }
-        },
-      });
+      //     var value = Math.round(circle.value() * 100);
+      //     if (value === 0) {
+      //       //  circle.setText('');
+      //     } else {
+      //       // circle.setText(value + "<small>%<small>");
+      //     }
+      //   },
+      // });
       // progressCircles2.text.style.fontSize = '20px';
-      progressCircles2.animate(0.85); // Number from 0.0 to 1.0
+      // progressCircles2.animate(0.85); // Number from 0.0 to 1.0
 
       /* Progress circle */
-      var progressCircles3 = new ProgressBar.Circle(circleprogressthree, {
-        color: "#F73563",
-        // This has to be the same size as the maximum width to
-        // prevent clipping
-        strokeWidth: 10,
-        trailWidth: 10,
-        easing: "easeInOut",
-        trailColor: "#fdd7e0",
-        duration: 1400,
-        text: {
-          autoStyleContainer: false,
-        },
-        from: { color: "#F73563", width: 10 },
-        to: { color: "#F73563", width: 10 },
-        // Set default step function for all animate calls
-        step: function (state, circle) {
-          circle.path.setAttribute("stroke", state.color);
-          circle.path.setAttribute("stroke-width", state.width);
+      // var progressCircles3 = new ProgressBar.Circle(circleprogressthree, {
+      //   color: "#F73563",
+      //   // This has to be the same size as the maximum width to
+      //   // prevent clipping
+      //   strokeWidth: 10,
+      //   trailWidth: 10,
+      //   easing: "easeInOut",
+      //   trailColor: "#fdd7e0",
+      //   duration: 1400,
+      //   text: {
+      //     autoStyleContainer: false,
+      //   },
+      //   from: { color: "#F73563", width: 10 },
+      //   to: { color: "#F73563", width: 10 },
+      //   // Set default step function for all animate calls
+      //   step: function (state, circle) {
+      //     circle.path.setAttribute("stroke", state.color);
+      //     circle.path.setAttribute("stroke-width", state.width);
 
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            // circle.setText('');
-          } else {
-            //  circle.setText(value + "<small>%<small>");
-          }
-        },
-      });
-      progressCircles3.animate(0.65); // Number from 0.0 to 1.0
+      //     var value = Math.round(circle.value() * 100);
+      //     if (value === 0) {
+      //       // circle.setText('');
+      //     } else {
+      //       //  circle.setText(value + "<small>%<small>");
+      //     }
+      //   },
+      // });
+      // progressCircles3.animate(0.65); // Number from 0.0 to 1.0
 
       /* Progress circle */
       var progressCircles1 = new ProgressBar.Circle(circleprogressone, {
