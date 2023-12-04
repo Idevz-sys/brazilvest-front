@@ -4869,6 +4869,10 @@ fieldset:disabled .btn {
   color: #6c757d;
 }
 
+.xs-small {
+  font-size: 0.7em
+}
+
 .pagination {
   display: flex;
   padding-left: 0;
