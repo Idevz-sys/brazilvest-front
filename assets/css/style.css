@@ -11601,7 +11601,7 @@ linearGradient stop:last-child {
 .bar-more.collapsed > span {
   height: 6px;
   width: 60px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .counter-number {
