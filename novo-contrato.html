@@ -441,6 +441,154 @@
     </main>
     <!-- Page ends-->
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <span>
+                            <i class="nav-icon bi bi-house"></i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stats.html">
+                        <span>
+                            <i class="nav-icon bi bi-box"></i>
+                            <span class="nav-text">Investimentos</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item centerbutton">
+                    <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#menumodal"
+                        id="centermenubtn">
+                        <span class="theme-radial-gradient">
+                            <i class="bi bi-grid size-22"></i>
+                        </span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="extrato.html">
+                        <span>
+                            <i class="nav-icon bi bi-file-earmark-text"></i>
+                            <span class="nav-text">Extrato</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <span>
+                            <i class="nav-icon bi bi-person"></i>
+                            <span class="nav-text">Perfil</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body text-center">
+                    <h5 class="mb-4"><span class="text-secondary fw-light text-center">BrazilVest</span><br /></h5>
+                    <!-- <div class="text-center">
+                        <img src="assets/img/QRCode.png" alt="" class="mb-2" />
+                        <p class="small text-secondary mb-4">Ask to scan this QR-Code<br />to accept money</p>
+                    </div> -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-auto text-center">
+                            <a href="bills.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-file-earmark-text size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Extratos</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="sendmoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-purple rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-currency-dollar size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Investimentos</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="receivemoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-success rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-success">
+                                    <i class="bi bi-credit-card size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">CBB's</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-auto text-center">
+                            <a href="withdraw.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-warning rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-warning">
+                                    <i class="bi bi-lightning size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Voltyun</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="addmoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-secondary rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-house size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Imobiliária</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="#" class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-bar-chart size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Ações</p>
+                        </div>
+                        <a href="profile.html" class="col-auto text-center mt-4">
+                            <div class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-person-circle size-24"></i>
+                                </div>
+                            </div>
+                            <p class="size-10 text-secondary">Meus Dados</p>
+                        </a>
+                        <a href="profile.html" class="col-auto text-center mt-4">
+                            <div class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-calculator size-24"></i>
+                                </div>
+                            </div>
+                            <p class="size-10 text-secondary">Contabilidade</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends-->
+
 
     <!-- Required jquery and libraries -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
