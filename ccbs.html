@@ -11,7 +11,6 @@
 
     <!-- manifest meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.json" />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/favicon180.png" sizes="180x180">
@@ -19,11 +18,15 @@
     <link rel="icon" href="assets/img/favicon16.png" sizes="16x16" type="image/png">
 
     <!-- Google fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- date rage picker -->
+    <link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
 
     <!-- swiper carousel css -->
     <link rel="stylesheet" href="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
@@ -32,7 +35,7 @@
     <link href="assets/css/style.css" rel="stylesheet" id="style">
 </head>
 
-<body class="body-scroll" data-page="">
+<body class="body-scroll" data-page="stats">
 
     <!-- loader section -->
     <div class="container-fluid loader-wrap">
@@ -50,6 +53,8 @@
             </div>
         </div>
     </div>
+    <!-- loader section ends -->
+
     <!-- Sidebar main menu -->
     <div class="sidebar-wrap  sidebar-overlay">
         <!-- Add pushcontent or fullmenu instead overlay -->
@@ -174,7 +179,8 @@
             </div>
         </div>
     </div>
-    <!-- loader section ends -->
+    <!-- Sidebar main menu ends -->
+
     <!-- Begin page -->
     <main class="h-100">
 
@@ -198,6 +204,95 @@
 
         <!-- main page content -->
         <div class="main-container container">
+            <!-- balance -->
+            <div class="row my-4 text-center">
+                <div class="col-12">
+                    <h1 class="fw-light mb-2"><span class="xs-small">R$</span> 1,050.00</h1>
+                    <p class="text-secondary">Saldo Total</p>
+                </div>
+            </div>
+
+            <!-- income expense-->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 p-1 shadow-sm shadow-success rounded-15">
+                                        <div class="icons bg-success text-white rounded-12">
+                                            <i class="bi bi-file-earmark-text"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col align-self-center ps-0">
+                                    <p class="size-10 text-secondary mb-0">Contrato | 10</p>
+                                    <p>10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 p-1 shadow-sm shadow-success rounded-15">
+                                        <div class="icons bg-success text-white rounded-12">
+                                            <i class="bi bi-shield-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col align-self-center ps-0">
+                                    <p class="size-10 text-secondary mb-0">CCB | 20</p>
+                                    <p><span class="xs-small">R$</span> 10.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 p-1 shadow-sm shadow-danger rounded-15">
+                                        <div class="icons bg-danger text-white rounded-12">
+                                            <i class="bi bi-bar-chart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col align-self-center ps-0">
+                                    <p class="size-10 text-secondary mb-0">Ações | 30</p>
+                                    <p><span class="xs-small">R$</span> 11.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 p-1 shadow-sm shadow-danger rounded-15">
+                                        <div class="icons bg-danger text-white rounded-12">
+                                            <i class="bi bi-briefcase"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col align-self-center ps-0">
+                                    <p class="size-10 text-secondary mb-0">Outros | 40</p>
+                                    <p><span class="xs-small">R$</span> 20.000,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- upcoming payments -->
             <div class="row mb-3">
                 <div class="col">
                     <h6 class="title">Últimos Investimentos</h6>
@@ -359,6 +454,153 @@
     </main>
     <!-- Page ends-->
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <span>
+                            <i class="nav-icon bi bi-house"></i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="stats.html">
+                        <span>
+                            <i class="nav-icon bi bi-box"></i>
+                            <span class="nav-text">Investimentos</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item centerbutton">
+                    <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#menumodal"
+                        id="centermenubtn">
+                        <span class="theme-radial-gradient">
+                            <i class="bi bi-grid size-22"></i>
+                        </span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="extrato.html">
+                        <span>
+                            <i class="nav-icon bi bi-file-earmark-text"></i>
+                            <span class="nav-text">Extrato</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <span>
+                            <i class="nav-icon bi bi-person"></i>
+                            <span class="nav-text">Perfil</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body text-center">
+                    <h5 class="mb-4"><span class="text-secondary fw-light text-center">BrazilVest</span><br /></h5>
+                    <!-- <div class="text-center">
+                        <img src="assets/img/QRCode.png" alt="" class="mb-2" />
+                        <p class="small text-secondary mb-4">Ask to scan this QR-Code<br />to accept money</p>
+                    </div> -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-auto text-center">
+                            <a href="bills.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-file-earmark-text size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Extratos</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="sendmoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-purple rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-currency-dollar size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Investimentos</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="receivemoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-success rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-success">
+                                    <i class="bi bi-credit-card size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">CCB'S</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-auto text-center">
+                            <a href="withdraw.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-warning rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-warning">
+                                    <i class="bi bi-lightning size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Voltyun</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="addmoney.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-secondary rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-house size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Imobiliária</p>
+                        </div>
+
+                        <div class="col-auto text-center">
+                            <a href="#" class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-bar-chart size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-10 text-secondary">Ações</p>
+                        </div>
+                        <a href="profile.html" class="col-auto text-center mt-4">
+                            <div class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-person-circle size-24"></i>
+                                </div>
+                            </div>
+                            <p class="size-10 text-secondary">Meus Dados</p>
+                        </a>
+                        <a href="profile.html" class="col-auto text-center mt-4">
+                            <div class="avatar avatar-70 p-1 shadow-sm shadow-info rounded-20 bg-opac mb-2"
+                                data-bs-dismiss="modal">
+                                <div class="icons text-info">
+                                    <i class="bi bi-calculator size-24"></i>
+                                </div>
+                            </div>
+                            <p class="size-10 text-secondary">Contabilidade</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends-->
 
     <!-- Required jquery and libraries -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -369,9 +611,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/color-scheme.js"></script>
 
-    <!-- PWA app service registration and works -->
-    <script src="assets/js/pwa-services.js"></script>
-
     <!-- Chart js script -->
     <script src="assets/vendor/chart-js-3.3.1/chart.min.js"></script>
 
@@ -380,6 +619,10 @@
 
     <!-- swiper js script -->
     <script src="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- daterange picker script -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
 
     <!-- page level custom script -->
     <script src="assets/js/app.js"></script>
