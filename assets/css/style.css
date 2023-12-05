@@ -11604,6 +11604,18 @@ linearGradient stop:last-child {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.btn-new {
+  width: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn-new:hover {
+  background-color: #5120a6;
+}
+
 .counter-number {
   border: 1px solid var(--finwallapp-theme-text);
   background: var(--finwallapp-theme-text);
