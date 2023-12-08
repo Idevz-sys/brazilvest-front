@@ -12710,14 +12710,34 @@ linearGradient stop:last-child {
   color: white !important;
 }
 
-.hover-new:hover{
+.voltyum-text {
+  color: #c3ad3e !important;
+}
+
+.bg-theme-blue {
+  background-color: #3a90fb !important;
+}
+
+.voltyum-gradient {
+  background: radial-gradient(
+    at 10% 10%,
+    #a3d7a9 0%,
+    #40845d 48%,
+    #40845d 100%
+  );
+}
+
+.winerys-gradient {
+  background: radial-gradient(at 10% 10%, #633b22 0%, #8c6144 100%);
+}
+
+.hover-new:hover {
   background-color: #0090fb !important;
 }
 
 .hover-new:hover p {
   color: white !important;
 }
-
 
 .sidebar-wrap.sidebar-overlay .sidebar {
   width: 280px;

@@ -402,182 +402,182 @@ $(window).on("load", function () {
       // progressCircles3.animate(0.65); // Number from 0.0 to 1.0
 
       /* Progress circle */
-      var progressCircles1 = new ProgressBar.Circle(circleprogressone, {
-        color: "#000000",
-        // This has to be the same size as the maximum width to
-        // prevent clipping
-        strokeWidth: 8,
-        trailWidth: 8,
-        easing: "easeInOut",
-        trailColor: "#CCF9ED",
-        duration: 1400,
-        text: {
-          autoStyleContainer: false,
-        },
-        from: { color: "#00DFA3", width: 8 },
-        to: { color: "#00DFA3", width: 8 },
-        // Set default step function for all animate calls
-        step: function (state, circle) {
-          circle.path.setAttribute("stroke", state.color);
-          circle.path.setAttribute("stroke-width", state.width);
+      // var progressCircles1 = new ProgressBar.Circle(circleprogressone, {
+      //   color: "#000000",
+      //   // This has to be the same size as the maximum width to
+      //   // prevent clipping
+      //   strokeWidth: 8,
+      //   trailWidth: 8,
+      //   easing: "easeInOut",
+      //   trailColor: "#CCF9ED",
+      //   duration: 1400,
+      //   text: {
+      //     autoStyleContainer: false,
+      //   },
+      //   from: { color: "#00DFA3", width: 8 },
+      //   to: { color: "#00DFA3", width: 8 },
+      //   // Set default step function for all animate calls
+      //   step: function (state, circle) {
+      //     circle.path.setAttribute("stroke", state.color);
+      //     circle.path.setAttribute("stroke-width", state.width);
 
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            circle.setText("");
-          } else {
-            circle.setText(
-              '<span class="size-12">' + value + "<small>%<small></span>"
-            );
-          }
-        },
-      });
-      progressCircles1.animate(0.65); // Number from 0.0 to 1.0
+      //     var value = Math.round(circle.value() * 100);
+      //     if (value === 0) {
+      //       circle.setText("");
+      //     } else {
+      //       circle.setText(
+      //         '<span class="size-12">' + value + "<small>%<small></span>"
+      //       );
+      //     }
+      //   },
+      // });
+      // progressCircles1.animate(0.65); // Number from 0.0 to 1.0
 
       /* Progress circle */
-      var progressCircles4 = new ProgressBar.Circle(circleprogressfour, {
-        color: "#000000",
-        // This has to be the same size as the maximum width to
-        // prevent clipping
-        strokeWidth: 8,
-        trailWidth: 8,
-        easing: "easeInOut",
-        trailColor: "#FFF1CC",
-        duration: 1400,
-        text: {
-          autoStyleContainer: false,
-        },
-        from: { color: "#FFBB00", width: 8 },
-        to: { color: "#FFBB00", width: 8 },
-        // Set default step function for all animate calls
-        step: function (state, circle) {
-          circle.path.setAttribute("stroke", state.color);
-          circle.path.setAttribute("stroke-width", state.width);
+      // var progressCircles4 = new ProgressBar.Circle(circleprogressfour, {
+      //   color: "#000000",
+      //   // This has to be the same size as the maximum width to
+      //   // prevent clipping
+      //   strokeWidth: 8,
+      //   trailWidth: 8,
+      //   easing: "easeInOut",
+      //   trailColor: "#FFF1CC",
+      //   duration: 1400,
+      //   text: {
+      //     autoStyleContainer: false,
+      //   },
+      //   from: { color: "#FFBB00", width: 8 },
+      //   to: { color: "#FFBB00", width: 8 },
+      //   // Set default step function for all animate calls
+      //   step: function (state, circle) {
+      //     circle.path.setAttribute("stroke", state.color);
+      //     circle.path.setAttribute("stroke-width", state.width);
 
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            circle.setText("");
-          } else {
-            circle.setText(
-              '<span class="size-12">' + value + "<small>%<small></span>"
-            );
-          }
-        },
-      });
-      progressCircles4.animate(0.65); // Number from 0.0 to 1.0
-
-      /* chart js areachart */
-      var areachart2 = document.getElementById("smallchart2").getContext("2d");
-      var gradient2 = areachart2.createLinearGradient(0, 0, 0, 66);
-      gradient2.addColorStop(0, "rgba(58, 199, 155, 0.6)");
-      gradient2.addColorStop(1, "rgba(58, 199, 155, 0)");
-      var myareachartCofig2 = {
-        type: "line",
-        data: {
-          labels: ["Q1", "Q2", "Q3", "Q4", "Q5"],
-          datasets: [
-            {
-              label: "# of Votes",
-              data: [
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-              ],
-              radius: 0,
-              backgroundColor: gradient2,
-              borderColor: "#00DFA3",
-              borderWidth: 1,
-              fill: true,
-              tension: 0.5,
-            },
-          ],
-        },
-        options: {
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false,
-            },
-          },
-          scales: {
-            y: {
-              display: false,
-              beginAtZero: true,
-            },
-            x: {
-              display: false,
-            },
-          },
-        },
-      };
-      var myAreaChart2 = new Chart(areachart2, myareachartCofig2);
-      /* my area chart randomize */
-      setInterval(function () {
-        myareachartCofig2.data.datasets.forEach(function (dataset) {
-          dataset.data = dataset.data.map(function () {
-            return randomScalingFactor();
-          });
-        });
-        myAreaChart2.update();
-      }, 2000);
+      //     var value = Math.round(circle.value() * 100);
+      //     if (value === 0) {
+      //       circle.setText("");
+      //     } else {
+      //       circle.setText(
+      //         '<span class="size-12">' + value + "<small>%<small></span>"
+      //       );
+      //     }
+      //   },
+      // });
+      // progressCircles4.animate(0.65); // Number from 0.0 to 1.0
 
       /* chart js areachart */
-      var areachart3 = document.getElementById("smallchart3").getContext("2d");
-      var gradient3 = areachart3.createLinearGradient(0, 0, 0, 66);
-      gradient3.addColorStop(0, "rgba(247, 53, 99, 0.6)");
-      gradient3.addColorStop(1, "rgba(247, 53, 99, 0)");
-      var myareachartCofig3 = {
-        type: "line",
-        data: {
-          labels: ["Q1", "Q2", "Q3", "Q4", "Q5"],
-          datasets: [
-            {
-              label: "# of Votes",
-              data: [
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-                randomScalingFactor(),
-              ],
-              radius: 0,
-              backgroundColor: gradient3,
-              borderColor: "#f73563",
-              borderWidth: 1,
-              fill: true,
-              tension: 0.5,
-            },
-          ],
-        },
-        options: {
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false,
-            },
-          },
-          scales: {
-            y: {
-              display: false,
-              beginAtZero: true,
-            },
-            x: {
-              display: false,
-            },
-          },
-        },
-      };
-      var myAreaChart3 = new Chart(areachart3, myareachartCofig3);
-      /* my area chart randomize */
-      setInterval(function () {
-        myareachartCofig3.data.datasets.forEach(function (dataset) {
-          dataset.data = dataset.data.map(function () {
-            return randomScalingFactor();
-          });
-        });
-        myAreaChart3.update();
-      }, 2000);
+      // var areachart2 = document.getElementById("smallchart2").getContext("2d");
+      // var gradient2 = areachart2.createLinearGradient(0, 0, 0, 66);
+      // gradient2.addColorStop(0, "rgba(58, 199, 155, 0.6)");
+      // gradient2.addColorStop(1, "rgba(58, 199, 155, 0)");
+      // var myareachartCofig2 = {
+      //   type: "line",
+      //   data: {
+      //     labels: ["Q1", "Q2", "Q3", "Q4", "Q5"],
+      //     datasets: [
+      //       {
+      //         label: "# of Votes",
+      //         data: [
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //         ],
+      //         radius: 0,
+      //         backgroundColor: gradient2,
+      //         borderColor: "#00DFA3",
+      //         borderWidth: 1,
+      //         fill: true,
+      //         tension: 0.5,
+      //       },
+      //     ],
+      //   },
+      //   options: {
+      //     maintainAspectRatio: false,
+      //     plugins: {
+      //       legend: {
+      //         display: false,
+      //       },
+      //     },
+      //     scales: {
+      //       y: {
+      //         display: false,
+      //         beginAtZero: true,
+      //       },
+      //       x: {
+      //         display: false,
+      //       },
+      //     },
+      //   },
+      // };
+      // var myAreaChart2 = new Chart(areachart2, myareachartCofig2);
+      // /* my area chart randomize */
+      // setInterval(function () {
+      //   myareachartCofig2.data.datasets.forEach(function (dataset) {
+      //     dataset.data = dataset.data.map(function () {
+      //       return randomScalingFactor();
+      //     });
+      //   });
+      //   myAreaChart2.update();
+      // }, 2000);
+
+      /* chart js areachart */
+      // var areachart3 = document.getElementById("smallchart3").getContext("2d");
+      // var gradient3 = areachart3.createLinearGradient(0, 0, 0, 66);
+      // gradient3.addColorStop(0, "rgba(247, 53, 99, 0.6)");
+      // gradient3.addColorStop(1, "rgba(247, 53, 99, 0)");
+      // var myareachartCofig3 = {
+      //   type: "line",
+      //   data: {
+      //     labels: ["Q1", "Q2", "Q3", "Q4", "Q5"],
+      //     datasets: [
+      //       {
+      //         label: "# of Votes",
+      //         data: [
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //           randomScalingFactor(),
+      //         ],
+      //         radius: 0,
+      //         backgroundColor: gradient3,
+      //         borderColor: "#f73563",
+      //         borderWidth: 1,
+      //         fill: true,
+      //         tension: 0.5,
+      //       },
+      //     ],
+      //   },
+      //   options: {
+      //     maintainAspectRatio: false,
+      //     plugins: {
+      //       legend: {
+      //         display: false,
+      //       },
+      //     },
+      //     scales: {
+      //       y: {
+      //         display: false,
+      //         beginAtZero: true,
+      //       },
+      //       x: {
+      //         display: false,
+      //       },
+      //     },
+      //   },
+      // };
+      // var myAreaChart3 = new Chart(areachart3, myareachartCofig3);
+      // /* my area chart randomize */
+      // setInterval(function () {
+      //   myareachartCofig3.data.datasets.forEach(function (dataset) {
+      //     dataset.data = dataset.data.map(function () {
+      //       return randomScalingFactor();
+      //     });
+      //   });
+      //   myAreaChart3.update();
+      // }, 2000);
 
       /* swiper carousel cardwiper */
       var swiper1 = new Swiper(".cardswiper", {
