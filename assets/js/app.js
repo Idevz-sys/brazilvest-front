@@ -113,7 +113,7 @@ $(window).on("load", function () {
       });
       break;
 
-      // case "index":
+    case "index":
       /* Progress circle */
       // var progresssaving = new ProgressBar.Circle(circlesaving, {
       //     color: '#000000',

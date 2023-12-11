@@ -12731,6 +12731,22 @@ linearGradient stop:last-child {
   background: radial-gradient(at 10% 10%, #633b22 0%, #8c6144 100%);
 }
 
+.btn-renew {
+  background-color: #f4f9fb;
+  color: #000 !important;
+  border-radius: 10px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-renew:hover {
+  background-color: #882bf4;
+  color: #fff !important;
+}
+
 .hover-new:hover {
   background-color: #0090fb !important;
 }
