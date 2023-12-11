@@ -250,41 +250,328 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <div class="form-floating is-valid mb-3">
-                                        <input type="text" class="form-control" value="talesM" placeholder="Username"
-                                            id="username" disabled>
-                                        <label for="username">Username</label>
-                                    </div>
-                                    <div class="form-floating is-valid mb-3">
-                                        <input type="text" class="form-control" value="email@email.com"
-                                            placeholder="Endereço de e-mail" id="emailphone" disabled>
-                                        <label for="emailphone">E-mail</label>
-                                    </div>
-                                    <div class="form-floating is-valid mb-3">
-                                        <input type="text" class="form-control" value="+55995374625"
-                                            placeholder="Endereço de e-mail" id="phone" disabled>
-                                        <label for="phone">Telefone</label>
-                                    </div>
-                                    <div class="form-floating is-valid mb-3">
-                                        <input type="date" class="form-control" placeholder="Data de Nascimento"
-                                            id="birthday" value="1994-01-01" disabled>
-                                        <label for="birthday">Data de Nascimento</label>
-                                    </div>
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-fisica-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-fisica" type="button" role="tab"
+                                                aria-controls="nav-fisica" aria-selected="true">Pessoa física</button>
+                                            <button class="nav-link" id="nav-juridica-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-juridica" type="button" role="tab"
+                                                aria-controls="nav-juridica" aria-selected="false">Pessoa
+                                                jurídica</button>
+                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-contact" type="button" role="tab"
+                                                aria-controls="nav-contact" aria-selected="false">Segurança</button>
+                                        </div>
+                                    </nav>
 
-                                    <h5 class="mt-4">Segurança</h5>
-                                    <div class="form-floating is-valid mb-3">
-                                        <input type="password" class="form-control" placeholder="Senha" id="password">
-                                        <label for="password">Nova Senha</label>
-                                    </div>
-                                    <div class="form-floating is-invalid mb-3">
-                                        <input type="password" class="form-control" placeholder="Confirmar Senha"
-                                            id="confirmpassword">
-                                        <label for="confirmpassword">Repetir Nova Senha</label>
-                                        <button type="button" class="btn btn-link text-danger tooltip-btn"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="Coloque uma senha válida" id="passworderror">
-                                            <i class="bi bi-info-circle"></i>
-                                        </button>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-fisica" role="tabpanel"
+                                            aria-labelledby="nav-fisica-tab">
+                                            <div class="container">
+                                                <h5 class="mt-4">Pessoa física</h5>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username" disabled>
+                                                            <label for="username">Username</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username">
+                                                            <label for="username">Nome</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username">
+                                                            <label for="username">Sobrenome</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <select class="form-select form-control" id="select2">
+                                                                <option selected>Masculino</option>
+                                                                <option>Feminino</option>
+                                                                <option>Outros</option>
+                                                            </select>
+                                                            <label for="select2">Gênero</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                value="email@email.com" placeholder="Endereço de e-mail"
+                                                                id="emailphone" disabled>
+                                                            <label for="emailphone">E-mail</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" value="+55995374625"
+                                                                placeholder="Endereço de e-mail" id="phone" disabled>
+                                                            <label for="phone">Telefone</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="date" class="form-control"
+                                                                placeholder="Data de Nascimento" id="birthday"
+                                                                value="1994-01-01" disabled>
+                                                            <label for="birthday">Data de Nascimento</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                value="000.000.000-00" placeholder="CPF" id="CPF">
+                                                            <label for="CPF">CPF</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                value="000.000.000-00" placeholder="RG" id="RG">
+                                                            <label for="CPF">RG</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h5 class="mt-4">Detalhes de endereço</h5>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Nome da rua</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Estado ou província</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Cidade ou Município</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">CEP (Código postal)</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <select class="form-select form-control" id="select2">
+                                                                <option selected>Brasil</option>
+                                                                <option>Estado Unidos</option>
+                                                                <option>Portugal</option>
+                                                            </select>
+                                                            <label for="select2">Pais</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="nav-juridica" role="tabpanel"
+                                            aria-labelledby="nav-juridica-tab">
+                                            <div class="container">
+                                                <h5 class="mt-4">Pessoa jurídica</h5>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username" disabled>
+                                                            <label for="username">Username</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username">
+                                                            <label for="username">Nome representante</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" value="talesM"
+                                                                placeholder="Username" id="username">
+                                                            <label for="username">Sobrenome representante</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                value="email@email.com" placeholder="Endereço de e-mail"
+                                                                id="emailphone" disabled>
+                                                            <label for="emailphone">E-mail</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" value="+55995374625"
+                                                                placeholder="Endereço de e-mail" id="phone">
+                                                            <label for="phone">Telefone</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="date" class="form-control"
+                                                                placeholder="Data de Nascimento" id="birthday"
+                                                                value="1994-01-01">
+                                                            <label for="birthday">Data de Nascimento</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Razão social" id="CPF">
+                                                            <label for="CPF">Razão social (Nome legal da
+                                                                Empresa)</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="00.000.000/0001-00" id="RG">
+                                                            <label for="CPF">Número de CNPJ</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h5 class="mt-4">Detalhes de endereço</h5>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Nome da rua</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Estado ou província</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">Cidade ou Município</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Nome da rua" id="streat">
+                                                            <label for="streat">CEP (Código postal)</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-floating">
+                                                            <select class="form-select form-control" id="select2">
+                                                                <option selected>Brasil</option>
+                                                                <option>Estado Unidos</option>
+                                                                <option>Portugal</option>
+                                                            </select>
+                                                            <label for="select2">Pais</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                            aria-labelledby="nav-contact-tab">
+                                            <h5 class="mt-4">Segurança</h5>
+                                            <div class="form-floating is-valid mb-3">
+                                                <input type="password" class="form-control" placeholder="Senha"
+                                                    id="password">
+                                                <label for="password">Nova Senha</label>
+                                            </div>
+                                            <div class="form-floating is-invalid mb-3">
+                                                <input type="password" class="form-control"
+                                                    placeholder="Confirmar Senha" id="confirmpassword">
+                                                <label for="confirmpassword">Repetir Nova Senha</label>
+                                                <button type="button" class="btn btn-link text-danger tooltip-btn"
+                                                    data-bs-toggle="tooltip" data-bs-placement="left"
+                                                    title="Coloque uma senha válida" id="passworderror">
+                                                    <i class="bi bi-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- <div class="col-auto align-self-center">
@@ -293,7 +580,6 @@
                                     </button>
                                 </div> -->
                             </div>
-
                         </div>
                     </div>
                 </div>
