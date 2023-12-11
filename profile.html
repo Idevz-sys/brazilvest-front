@@ -259,9 +259,14 @@
                                                 data-bs-target="#nav-juridica" type="button" role="tab"
                                                 aria-controls="nav-juridica" aria-selected="false">Pessoa
                                                 jurídica</button>
-                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
-                                                data-bs-target="#nav-contact" type="button" role="tab"
-                                                aria-controls="nav-contact" aria-selected="false">Segurança</button>
+
+                                            <button class="nav-link" id="nav-compliance-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-compliance" type="button" role="tab"
+                                                aria-controls="nav-compliance" aria-selected="false">Compliance</button>
+
+                                            <button class="nav-link" id="nav-security-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-security" type="button" role="tab"
+                                                aria-controls="nav-security" aria-selected="false">Segurança</button>
                                         </div>
                                     </nav>
 
@@ -416,6 +421,185 @@
                                             </div>
                                         </div>
 
+                                        <div class="tab-pane fade mt-3" id="nav-compliance" role="tabpanel"
+                                            aria-labelledby="nav-compliance-tab">
+                                            <h6 class="mb-3">Documentos</h6>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                                                <button class="nav-link active" id="nav-compliance-fisica-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-compliance-fisica"
+                                                    type="button" role="tab" aria-controls="nav-compliance-fisica"
+                                                    aria-selected="true">Pessoa física</button>
+
+                                                <button class="nav-link" id="nav-compliance-juridica-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-compliance-juridica"
+                                                    type="button" role="tab" aria-controls="nav-compliance-juridica"
+                                                    aria-selected="false">Pessoa
+                                                    jurídica</button>
+                                            </div>
+
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-compliance-fisica"
+                                                    role="tabpanel" aria-labelledby="nav-compliance-fisica-tab">
+                                                    <div class="container">
+                                                        <h6 class="mt-4 mb-2">Compliance Pessoa Física</h6>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4 mb-4">
+                                                            <div class="mt-0 col-12 col-md-6">
+                                                                <label for="formFile" class="form-label mb-0">Frente do
+                                                                    documento com foto</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10MB</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+                                                            <div class="mt-0 col-12 col-md-6">
+                                                                <label for="formFile" class="form-label mb-0">Verso do
+                                                                    documento com foto
+                                                                </label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10MB</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4">
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile" class="form-label mb-0">Selfie
+                                                                    segurando
+                                                                    documento com foto</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10 MB. Certifique-se de capturá-las com
+                                                                        iluminação
+                                                                        adequada, evitando objetos que possam cobrir o
+                                                                        cabelo ou
+                                                                        o rosto.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile"
+                                                                    class="form-label mb-0">Comprovante de
+                                                                    residencia
+                                                                </label>
+                                                                <p class="text-secondary"><small>Pode ser uma conta de
+                                                                        água, luz ou telefone em nome da empresa. As
+                                                                        imagens devem ter no máximo 10 MB. Certifique-se
+                                                                        de capturar com iluminação adequada e com boa
+                                                                        legibilidade.
+                                                                    </small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="nav-compliance-juridica" role="tabpanel"
+                                                    aria-labelledby="nav-compliance-juridica-tab">
+                                                    <div class="container">
+                                                        <h6 class="mt-4 mb-2">Compliance Pessoa Jurídica</h6>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4 mb-4">
+                                                            <div class="mt-0 col-12 col-md-6">
+                                                                <label for="formFile" class="form-label mb-0">Frente do
+                                                                    documento com foto</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10MB</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+                                                            <div class="mt-0 col-12 col-md-6">
+                                                                <label for="formFile" class="form-label mb-0">Verso do
+                                                                    documento com foto
+                                                                </label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10MB</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4">
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile" class="form-label mb-0">Selfie
+                                                                    segurando
+                                                                    documento com foto</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10 MB. Certifique-se de capturá-las com
+                                                                        iluminação
+                                                                        adequada, evitando objetos que possam cobrir o
+                                                                        cabelo ou
+                                                                        o rosto.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile"
+                                                                    class="form-label mb-0">Comprovante de Endereço
+                                                                    Comercial
+                                                                </label>
+                                                                <p class="text-secondary"><small>Pode ser uma conta de
+                                                                        água, luz ou telefone em nome da empresa. As
+                                                                        imagens devem ter no máximo 10 MB. Certifique-se
+                                                                        de capturar com iluminação adequada e com boa
+                                                                        legibilidade.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4 mt-4">
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile" class="form-label mb-0">Cópia do
+                                                                    Contrato Social ou Estatuto Social</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10 MB. Certifique-se de capturá-las com
+                                                                        iluminação
+                                                                        adequada, evitando objetos que possam cobrir o
+                                                                        cabelo ou
+                                                                        o rosto.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile" class="form-label mb-0">Cartão
+                                                                    CNPJ</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter
+                                                                        no
+                                                                        máximo
+                                                                        10 MB. Certifique-se de capturá-las com
+                                                                        iluminação
+                                                                        adequada, evitando objetos que possam cobrir o
+                                                                        cabelo ou
+                                                                        o rosto.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column flex-md-row gap-4 mt-4">
+                                                            <div class="col-12 col-md-6 mt-md-3">
+                                                                <label for="formFile" class="form-label mb-0">Contrato
+                                                                    de Representação Legal</label>
+                                                                <p class="text-secondary"><small>As imagens devem ter no
+                                                                        máximo
+                                                                        10 MB. Certifique-se de capturá-las com
+                                                                        iluminação
+                                                                        adequada, evitando objetos que possam cobrir o
+                                                                        cabelo ou
+                                                                        o rosto.</small></p>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="tab-pane fade" id="nav-juridica" role="tabpanel"
                                             aria-labelledby="nav-juridica-tab">
                                             <div class="container">
@@ -553,32 +737,70 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                            aria-labelledby="nav-contact-tab">
-                                            <h5 class="mt-4">Segurança</h5>
-                                            <div class="form-floating is-valid mb-3">
-                                                <input type="password" class="form-control" placeholder="Senha"
-                                                    id="password">
-                                                <label for="password">Nova Senha</label>
-                                            </div>
-                                            <div class="form-floating is-invalid mb-3">
-                                                <input type="password" class="form-control"
-                                                    placeholder="Confirmar Senha" id="confirmpassword">
-                                                <label for="confirmpassword">Repetir Nova Senha</label>
-                                                <button type="button" class="btn btn-link text-danger tooltip-btn"
-                                                    data-bs-toggle="tooltip" data-bs-placement="left"
-                                                    title="Coloque uma senha válida" id="passworderror">
-                                                    <i class="bi bi-info-circle"></i>
-                                                </button>
+                                        <div class="tab-pane fade" id="nav-security" role="tabpanel"
+                                            aria-labelledby="nav-security-tab">
+                                            <div class="container">
+                                                <h5 class="mt-4">Segurança</h5>
+
+                                                <div
+                                                    class="d-flex flex-md-row flex-column align-items-center gap-4 mt-4">
+                                                    <div class="form-floating is-valid mb-3 col-12 col-md-6">
+                                                        <input type="password" class="form-control" placeholder="Senha"
+                                                            id="password">
+                                                        <label for="password">Nova Senha</label>
+                                                    </div>
+
+                                                    <div class="form-floating is-invalid mb-3 col-12 col-md-6">
+                                                        <input type="password" class="form-control"
+                                                            placeholder="Confirmar Senha" id="confirmpassword">
+                                                        <label for="confirmpassword">Repetir Nova Senha</label>
+                                                    </div>
+                                                </div>
+
+                                                <h5 class="mt-4">2FA (Autenticação de dois Fatores)</h5>
+                                                <p class="text-secondary"><small>Para garantir a segurança da sua conta,
+                                                        recomendamos a ativação da
+                                                        Autenticação de Dois Fatores (2FA). Utilize um dos aplicativos
+                                                        de
+                                                        autenticador abaixo para gerar códigos de verificação:</small>
+                                                </p>
+
+                                                <ol class="small text-secondary">
+                                                    <small>
+                                                        <li>
+                                                            <strong>Google Authenticator</strong>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2"
+                                                                target="_blank">Android</a> e <a
+                                                                href="https://apps.apple.com/us/app/google-authenticator/id388497605"
+                                                                target="_blank">iOS</a>.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Microsoft Authenticator</strong>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.azure.authenticator"
+                                                                target="_blank">Android</a> e <a
+                                                                href="https://apps.apple.com/us/app/microsoft-authenticator/id983156458"
+                                                                target="_blank">iOS</a>.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Authy</strong>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.authy.authy"
+                                                                target="_blank">Android</a> e <a
+                                                                href="https://apps.apple.com/us/app/authy/id494168017"
+                                                                target="_blank">iOS</a>.
+                                                        </li>
+                                                    </small>
+                                                </ol>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <img src="assets/img/brazilvest/icons/qr-code.svg" alt="QR code"
+                                                            width="300" height="300">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-auto align-self-center">
-                                    <button class="btn btn-link text-color-theme btn-44">
-                                        <i class="bi bi-arrow-up-right-circle fs-2"></i>
-                                    </button>
-                                </div> -->
                             </div>
                         </div>
                     </div>
