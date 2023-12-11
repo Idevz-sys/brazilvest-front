@@ -31,6 +31,9 @@
     <!-- swiper carousel css -->
     <link rel="stylesheet" href="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
 
+    <!-- Footable -->
+    <link rel="stylesheet" href="assets/css/footable.bootstrap.min.css" />
+
     <!-- style css for this template -->
     <link href="assets/css/style.css" rel="stylesheet" id="style">
 </head>
@@ -208,7 +211,7 @@
                 <h6 class="title">Imobiliária Investimentos</h6>
             </div>
             <div class="row mb-4">
-                <div class="col-3">
+                <div class="col-lg-3 mt-lg-0 mt-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -227,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 mt-lg-0 mt-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -246,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 mt-lg-0 mt-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -265,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 mt-lg-0 mt-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -296,149 +299,154 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body p-0">
-                            <ul class="list-group list-group-flush bg-none">
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <div
-                                                class="p-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th data-breakpoints="xs">ID</th>
+                                        <th>CÓD</th>
+                                        <th>Empresa</th>
+                                        <th data-breakpoints="xs">Tipo</th>
+                                        <th data-breakpoints="xs sm">Valor</th>
+                                        <th data-breakpoints="xs sm">Inicio</th>
+                                        <th data-breakpoints="xs sm">Termino</th>
+                                        <th data-breakpoints="xs sm">Lucros</th>
+                                        <th data-breakpoints="xs sm">Contratos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-expanded="false">
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center table-cell">
                                                 <img src="assets/img/brazilvest/brazilvest-icon.png" alt=""
                                                     width="25" />
                                             </div>
-                                        </div>
-                                        <div class="col align-self-center ps-0">
-                                            <p class="text-muted size-10 mb-0">ID</p>
-                                            <p>XYZ</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">CÓD</p>
-                                            <p>1234</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Empresa</p>
-                                            <p>Tauri</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Tipo</p>
-                                            <p>CCB AGRO</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Valor</p>
-                                            <p><span class="xs-small">R$</span> 50.000,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Inicio</p>
-                                            <p>10-10-2023</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Termino</p>
-                                            <p>10-10-2024</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Lucros</p>
-                                            <p><span class="xs-small">R$</span> 3.142,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Contrato</p>
-                                            <a href="#" class="btn-default shadow-sm mt-1 btn-new">Ver</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <div
-                                                class="p-1 rounded-circle d-flex justify-content-center align-items-center">
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">XYZ</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">1234</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">Tauri</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">CCB AGRO</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 50.000,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2023</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 3.142,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><a href="#"
+                                                    class="btn-default shadow-sm mt-1 btn-new">Ver</a></div>
+                                        </td>
+                                    </tr>
+
+                                    <tr data-expanded="false">
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center table-cell">
                                                 <img src="assets/img/brazilvest/brazilvest-icon.png" alt=""
                                                     width="25" />
                                             </div>
-                                        </div>
-                                        <div class="col align-self-center ps-0">
-                                            <p class="text-muted size-10 mb-0">ID</p>
-                                            <p>WTA</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">CÓD</p>
-                                            <p>3214</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Empresa</p>
-                                            <p>Voltyon</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Tipo</p>
-                                            <p>Cotas</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Valor</p>
-                                            <p><span class="xs-small">R$</span> 5.000,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Inicio</p>
-                                            <p>10-10-2023</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Termino</p>
-                                            <p>10-10-2024</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Lucros</p>
-                                            <p><span class="xs-small">R$</span> 3.142,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Contrato</p>
-                                            <a href="#" class="btn-default shadow-sm mt-1 btn-new">Ver</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <div
-                                                class="p-1 rounded-circle d-flex justify-content-center align-items-center">
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">WTA</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">3214</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">Voltyom</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">Cota</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 5.000,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2023</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 3.142,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><a href="#"
+                                                    class="btn-default shadow-sm mt-1 btn-new">Ver</a></div>
+                                        </td>
+                                    </tr>
+
+                                    <tr data-expanded="false">
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center table-cell">
                                                 <img src="assets/img/brazilvest/brazilvest-icon.png" alt=""
                                                     width="25" />
                                             </div>
-                                        </div>
-                                        <div class="col align-self-center ps-0">
-                                            <p class="text-muted size-10 mb-0">ID</p>
-                                            <p>WVN</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">CÓD</p>
-                                            <p>7234</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Empresa</p>
-                                            <p>Winerys</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Tipo</p>
-                                            <p>Cotas</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Valor</p>
-                                            <p><span class="xs-small">R$</span> 25.000,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Inicio</p>
-                                            <p>10-10-2023</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Termino</p>
-                                            <p>10-10-2024</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Lucros</p>
-                                            <p><span class="xs-small">R$</span> 3.142,00</p>
-                                        </div>
-                                        <div class="col align-self-center">
-                                            <p class="text-secondary text-muted size-10 mb-0">Contrato</p>
-                                            <a href="#" class="btn-default shadow-sm mt-1 btn-new">Ver</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">WVN</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">7234</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">Winerys</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">Cotas</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 25.000,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2023</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell">10-10-2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><span class="xs-small">R$</span> 3.142,00</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-cell"><a href="#"
+                                                    class="btn-default shadow-sm mt-1 btn-new">Ver</a></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="container d-flex justify-content-center flex-wrap">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination flex-wrap">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -621,6 +629,9 @@
     <!-- daterange picker script -->
     <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
+
+    <!-- footable -->
+    <script src="assets/js/footable.min.js"></script>
 
     <!-- page level custom script -->
     <script src="assets/js/app.js"></script>

@@ -862,3 +862,7 @@ $(window).on("load", function () {
       break;
   }
 });
+
+jQuery(function ($) {
+  $(".table").footable();
+});

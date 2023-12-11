@@ -12742,6 +12742,44 @@ linearGradient stop:last-child {
   width: 100%;
 }
 
+.table th {
+  vertical-align: middle !important;
+}
+
+.page-link {
+  color: #ffffff;
+  background-color: #6500d9;
+}
+
+.page-link:hover {
+  color: #fff;
+  background-color: #0090fb;
+  border-color: #ffffff;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #0090fb;
+  border-color: #ffffff;
+}
+
+.newnave-tabs .nav-link.active,
+.newnave-tabs .nav-item.show .nav-link {
+  background: linear-gradient(
+    135deg,
+    #0090fb 0%,
+    var(--finwallapp-theme-color-grad-2) 50%,
+    #6500d9 100%
+  );
+
+  color: #fff;
+}
+
+.table-cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .btn-renew:hover {
   background-color: #882bf4;
   color: #fff !important;
