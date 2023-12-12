@@ -363,7 +363,8 @@
                                 </div>
 
                                 <div class="col-auto text-center">
-                                    <a href="shop.html" class="avatar avatar-60 p-1 shadow-sm rounded-15 bg-opac mb-2">
+                                    <a class="avatar avatar-60 p-1 shadow-sm rounded-15 bg-opac mb-2"
+                                        data-bs-toggle="modal" href="#referModal" role="button">
                                         <div class="icons bg-success text-white rounded-12 bg-opac">
                                             <i class="bi bi-person-plus size-22"></i>
                                         </div>
@@ -708,6 +709,28 @@
             <div class="row mb-3">
                 <div class="col">
                     <h6 class="title">Meus lucros Recebidos</h6>
+                </div>
+            </div>
+
+            <div class="modal fade" id="referModal" aria-hidden="true" aria-labelledby="referModalLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="referModalLabel">Indique</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você já conhece as maravilhas da nossa plataforma, certo? Agora, imagine só compartilhar
+                            essa experiência incrível com seus amigos e ainda ganhar benefícios exclusivos. Sim, é isso
+                            mesmo!
+
+                            <div class="form-group form-floating mb-3 mt-2">
+                                <input type="text" class="form-control" id="email" placeholder="Username"
+                                    value="https://www.brazilvest.com/ref=34q32323">
+                                <label class="form-control-label" for="email">Link de indicação</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
